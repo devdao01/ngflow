@@ -1,4 +1,4 @@
-# ngflow
+# ngflow (`@devdao01/ngflow`)
 
 Angular port of [xyflow](https://github.com/xyflow/xyflow) (React Flow / Svelte Flow) —
 a library for building node-based UIs, editors and diagrams.
@@ -22,11 +22,17 @@ a library for building node-based UIs, editors and diagrams.
   `useConnection`, `useNodeConnections`, `useNodesData`, `useOnSelectionChange`, …
 - Sub flows (parent/child nodes), dark mode, fitView, viewport portal
 
+## Installation
+
+```bash
+npm install @devdao01/ngflow
+```
+
 ## Usage
 
 ```ts
 import { Component, signal } from '@angular/core';
-import { NgFlowComponent, BackgroundComponent, ControlsComponent, type Node, type Edge } from 'ngflow';
+import { NgFlowComponent, BackgroundComponent, ControlsComponent, type Node, type Edge } from '@devdao01/ngflow';
 
 @Component({
   selector: 'app-flow',
@@ -50,7 +56,7 @@ export class FlowComponent {
 Import the theme once (e.g. in `styles.css`):
 
 ```css
-@import 'ngflow/styles/style.css'; /* or base.css for bare-minimum styles */
+@import '@devdao01/ngflow/styles/style.css'; /* or base.css for bare-minimum styles */
 ```
 
 See `../demo` for a gallery of 24 runnable examples and `PORTING.md` for

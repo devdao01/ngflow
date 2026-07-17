@@ -1,11 +1,16 @@
 {
-  "name": "ngflow",
+  "name": "@devdao01/ngflow",
   "version": "0.1.0",
   "description": "Angular port of xyflow (React Flow / Svelte Flow) — build node-based UIs, editors and diagrams with Angular signals.",
   "license": "MIT",
+  "author": "devdao01",
+  "homepage": "https://github.com/devdao01/ngflow#readme",
+  "bugs": {
+    "url": "https://github.com/devdao01/ngflow/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/devdao01/ngflow.git"
+    "url": "git+https://github.com/devdao01/ngflow.git"
   },
   "keywords": [
     "angular",
@@ -18,10 +23,23 @@
     "react-flow",
     "svelte-flow"
   ],
-  "main": "src/index.ts",
+  "exports": {
+    "./styles/style.css": {
+      "style": "./styles/style.css",
+      "default": "./styles/style.css"
+    },
+    "./styles/base.css": {
+      "style": "./styles/base.css",
+      "default": "./styles/base.css"
+    }
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@xyflow/system": "^0.0.79",
+    "tslib": "^2.3.0"
+  },
   "peerDependencies": {
     "@angular/common": ">=20.0.0",
-    "@angular/core": ">=20.0.0",
-    "@xyflow/system": "^0.0.79"
+    "@angular/core": ">=20.0.0"
   }
 }
