@@ -1,0 +1,27 @@
+{
+  "name": "ngflow",
+  "version": "0.1.0",
+  "description": "Angular port of xyflow (React Flow / Svelte Flow) — build node-based UIs, editors and diagrams with Angular signals.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devdao01/ngflow.git"
+  },
+  "keywords": [
+    "angular",
+    "flow",
+    "node-based",
+    "diagram",
+    "graph",
+    "workflow",
+    "xyflow",
+    "react-flow",
+    "svelte-flow"
+  ],
+  "main": "src/index.ts",
+  "peerDependencies": {
+    "@angular/common": ">=20.0.0",
+    "@angular/core": ">=20.0.0",
+    "@xyflow/system": "^0.0.79"
+  }
+}
